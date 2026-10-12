@@ -137,11 +137,17 @@ Employee-ML-Capstone/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-github-repository-url>
+git clone https://github.com/AbhaySekhar/Employee-ML-Capstone.git
 cd Employee-ML-Capstone
 ```
 
-### 2. Create and activate a virtual environment
+### 2. Obtain the dataset
+
+Download the IBM HR Analytics Employee Attrition & Performance dataset from the [Kaggle dataset page](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
+
+Place the required CSV files in the `data/` directory, using the filenames expected by the notebook or scripts.
+
+### 3. Create and activate a virtual environment
 
 On Windows PowerShell:
 
@@ -150,7 +156,7 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-### 3. Install dependencies
+### 4. Install dependencies
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -158,7 +164,7 @@ python -m pip install -r requirements.txt
 
 Use a Python version compatible with the listed package versions.
 
-### 4. Run the prediction script
+### 5. Run the prediction script
 
 ```powershell
 python src/predict_employee.py
@@ -166,7 +172,7 @@ python src/predict_employee.py
 
 The script prints the estimated monthly income, estimated attrition probability, predicted attrition label, and decision threshold for a sample employee.
 
-### 5. Explore the notebook
+### 6. Explore the notebook
 
 Open `notebooks/01_employee_eda.ipynb` in VS Code or Jupyter to review the exploratory analysis and modelling workflow.
 
