@@ -1,0 +1,25 @@
+
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoint files
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+
+# Dataset files (download separately from the source)
+data/*.csv
+
+# Employee-level results derived from the dataset
+results/employee_clusters.csv
